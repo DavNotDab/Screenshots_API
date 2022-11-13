@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "googleapis": "^109.0.1",
+    "got": "^12.5.2",
+    "screenshotmachine": "^2.0.0"
+  },
+  "type": "module"
+}
