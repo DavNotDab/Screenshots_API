@@ -3,10 +3,10 @@ import got from 'got';
 
 // Auth details
 const CLIENT_ID = '13144220183-uq6q6n2rqj7dde8q972j5e3f8rsq2opi.apps.googleusercontent.com';
-const CLIENT_SECRET = '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';
+const CLIENT_SECRET = '##########';
 const REDIRECT_URI = 'https://developers.google.com/oauthplayground';
 
-const REFRESH_TOKEN = '1//04b_xmSXuqR6KCgYIARAAGAQSNwF-L9IrNlaG6zHPN2ONC6Bk1dusYQdSFzUYcQ7MP2WS0ye5uDAU5o7UZkSTPuAi36v2EHWo7OY';
+const REFRESH_TOKEN = '##########';
 
 const oAuth2Client = new google.auth.OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI);
 oAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
