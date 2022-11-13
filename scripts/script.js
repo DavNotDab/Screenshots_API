@@ -3,6 +3,15 @@ import {uploadFile} from './drive.js';
 const customerKey = '545b8c';
 const secretPhrase = '';
 
+// Array with all the sites' URLs to be screenshotted
+const urls = [
+    "https://ifunded.de/en/",
+    "www.propertypartner.co",
+    "propertymoose.co.uk",
+    "www.homegrown.co.uk",
+    "https://www.realtymogul.com"
+];
+
 // Function that takes a site's URL and returns the site's screenshot URL
 function takeScreenshot(url) {
     let options = {
@@ -27,15 +36,6 @@ function getApiUrls(urls) {
 function getFileNames(urls) {
     return urls.map(url => url.replace(/.+\/\/|www.|\..+/g, ''));
 }
-
-// Array with all the sites' URLs to be screenshotted
-const urls = [
-    "https://ifunded.de/en/",
-    "www.propertypartner.co",
-    "propertymoose.co.uk",
-    "www.homegrown.co.uk",
-    "https://www.realtymogul.com"
-];
 
 const screenshots = getApiUrls(urls);
 const names = getFileNames(urls);
